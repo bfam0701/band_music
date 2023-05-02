@@ -1,0 +1,97 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	/* color: #fff; */
+	font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #2d2d30;
+	padding: 24px;
+}
+.header__logo {
+	font-size: 30px;
+	color: #5e5e5e;
+}
+.menu {
+	display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.menu__main {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	gap: 30px;
+}
+.menu__main li a i {
+	color: #5e5e5e;
+}
+.menu__main li a:hover {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	transition: all .2s;
+}
+.menu__main li a:hover > i {
+	color: #fff;
+	transition: all .2s;
+}
+.menu__main a {
+	text-decoration: none;
+	color: #5e5e5e;
+	font-weight: 700;
+	text-transform: uppercase;
+    letter-spacing: 3.2px;
+}
+.menu__main li {
+	position: relative;
+}
+.menu__main li:hover > .sub__menu {
+	display: block;
+} 
+.sub__menu {
+	position: absolute;
+	top: 16px;
+	right: 0;
+	border: 1px solid #000;
+	background-color: #fff;
+	padding: 16px 24px;
+	border-radius: 4px;
+	width: 200px;
+	display: none;
+}
+.sub__menu > li:hover {
+	background-color: red;
+	padding: 8px;
+}
+.sub__menu > li:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.banner {
+	width: 100%;
+}
+
+.intro__inner {
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+.intro__inner h3 {
+	font-size: 30px;
+	letter-spacing: 1.5;
+	text-transform: uppercase;
+	margin: 16px 0;
+	font-weight: 200;	
+}
+.intro__love {
+	margin-bottom: 16px;
+	font-style: italic;
+}
+.intro__content {
+	line-height: 1.6;
+}
